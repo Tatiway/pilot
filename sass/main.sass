@@ -1,0 +1,537 @@
+$black-color: #101010
+$green-color: #6fca43
+$orange-color: #fe621d
+$green-font-color: #6fca43
+$grey-font-color: #363636
+
+body
+  font: 16px "OpenSansRegular", Arial, sans-serif
+  color: $black-color
+  height: 100%
+html
+	height: 100% 
+
+h1, h2, h3, h4
+	font-family: "MarmeladRegular", Arial, sans-serif
+	margin: 0
+
+h1, h2, h3
+	letter-spacing: 5px
+
+h1
+	font-size: 60px
+
+h2
+	font-size: 35px
+
+h3
+	font-size: 32px
+
+h4
+	font-size: 24px
+
+p 
+	font-size: 16px
+	margin: 12px
+a
+	color: $green-color
+	font-size: 18px
+
+
+a:hover, a:focus, a:active
+	color: $orange-color
+	text-decoration: none
+
+//header
+.top-line
+	padding: 25px 50px
+	font-size: 16px
+	background-color: #fff
+	height: 100px
+	> div
+		display: inline-block
+		vertical-align: middle
+.left-side
+	float: left
+	> div
+		vertical-align: middle
+		display: inline-block	
+	.logo
+		background-image: url(../img/logo.png)
+		height: 50px
+		width: 114px
+	.nav-button
+		height: 30px
+		width: 30px
+		margin-left: 50px
+		cursor: pointer
+		span
+			display: block
+			margin-top: 6px
+			height: 4px
+			width: 100%
+			background-color: #b8b8b8
+			outline: none
+			&:first-child
+				margin-top: 3px
+.right-side
+	float: right
+	> div
+		display: inline-block
+		vertical-align: middle
+		margin-left: 50px
+		&:nth-child(1)
+			margin-left: 0px
+		&:nth-child(2)
+			margin-left: 0px
+.cart
+	background-image: url(../img/cart.png)
+	width: 36px
+	height: 35px
+	&:hover
+		background-image: url(../img/cart_hover.png)
+.len  
+	position: relative
+	padding-right: 20px
+	a 
+		color: $black-color
+		font-size: 16px
+		&:hover
+			color: $orange-color
+		&:before
+			content: ""
+			position: absolute
+			top: 10px
+			right: 0px
+			border: 5px solid transparent
+			border-top: 5px solid $black-color
+
+.ourTown-wrap
+	margin-right: 10px
+
+.green-button
+	display: inline-block
+	background-color: #6fca43
+	color: #fff
+	font: 16px "OpenSansBold", Arial, sans-serif
+	padding: 7px 25px 7px 20px
+	margin-left: 50px
+	cursor: pointer
+	outline: none
+	&:hover
+		background-color: #59b22e
+.green-button-sm
+	display: inline-block
+	background-color: #6fca43
+	padding: 7px
+	&:hover
+		background-color: #59b22e
+.tel
+	display: inline-block
+	vertical-align: middle
+	background-image: url(../img/phone.png)
+	width: 36px
+	height: 35px
+	margin-right: 5px
+.phone, .phone-sm
+	span
+		color: $green-color
+
+
+
+//slider
+#slider
+	position: relative
+	.item
+		display: block
+		width: 100%
+		min-height: 320px
+		background-color: #ccc
+		background-image: url(../img/bg_img0.jpg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		.promo-wrap
+			height: 800px
+			left: 170px
+			top: 135px
+			position: relative
+			.sale
+				width: 220px
+				height: 220px
+				background-color: $orange-color
+				border-radius: 100%
+				text-align: center
+				position: relative
+				top: 0px
+				left: 0
+				h1
+					color: #fff
+					line-height: 200px
+			.promo
+				width: 346px
+				height: 346px
+				background-color: $black-color 
+				border-radius: 100%
+				text-align: center
+				position: relative
+				top: -70px
+				left: 70px
+				h3
+					color: #fff
+					padding: 80px 40px 0 40px
+					line-height: 48px 
+					text-transform: uppercase
+					margin-bottom: 30px
+	.owl-controls
+		position: absolute
+		width: 100%
+		height: auto
+		.owl-pagination
+			margin: auto 
+			position: relative
+			top: -115px
+			.owl-page 
+				width: 20px
+				height: 20px
+				border-radius: 100%
+				background-color: transparent
+				border: 2px solid #fff
+				margin: 30px
+				opacity: 1
+				span
+					opacity: 0
+			.active
+				transform: scale(3, 3)
+				background-image: url(../img/bg_img0.jpg)
+				background-size: cover
+				background-position: center
+				border-radius: 100%
+				margin: 30px
+		.owl-buttons
+			position: relative
+			bottom: 600px
+			.owl-prev
+				background-image: url(../img/arrow_left.png)	
+				float: left
+				margin-left: 50px
+			.owl-next
+				background-image: url(../img/arrow_right.png)	
+				float: right
+				margin-right: 50px	
+		.owl-buttons > div
+			background-color: transparent
+			background-repeat: no-repeat
+			width: 72px
+			height: 150px
+			opacity: 1
+			&:hover
+				opacity: .7
+
+		
+
+// section 1
+
+.s-title-wrap
+	text-align: center
+	background-color: #dbdbdb
+	padding: 65px 0
+
+.s1-content-wrap
+	height: 450px 
+	width: auto
+	overflow-x: scroll
+	overflow-y: hidden
+	white-space: nowrap 
+	worl-wrap: normal
+	letter-spacing: -.36em 
+	font-size: 0 
+	.s1-item-wrap
+		display: inline-block
+		position: relative
+		width: 480px
+		height: 450px 
+		img
+			width: 480px
+			height: 450px
+		.s1-item-cont
+			opacity: 0
+			transition: all .4s
+			position: absolute
+			display: inline-block 
+			width: 480px
+			height: 450px
+			text-align: center
+			background-color: $black-color
+			white-space: normal 
+			h4
+				color: #fff
+				padding: 150px 60px 0 60px
+				line-height: 35px
+			p
+				color: #656565
+				margin-bottom: 25px
+			&:hover
+				opacity: 1
+
+
+
+
+// section 2
+.s2-content-wrap
+	height: 680px
+	width: auto 
+	overflow-x: scroll
+	overflow-y: hidden
+	white-space: nowrap 
+	worl-wrap: normal 
+	img 
+		width: 960px
+		height: 680px
+		overflow-y: hidden
+		display: inline-block 
+		vertical-align: top
+	
+
+// section 3
+.section-3
+	background-image: url(../img/bg.jpg)
+	padding: 124px 20px 140px 20px
+.s3-content-wrap
+	padding: 0 20px
+	.red-text
+		font-family: "OpenSansItalic", Arila, sans-serif
+		letter-spacing: 2px
+		color: $orange-color 
+		margin: 50px 12px 40px 0px
+	p
+		font-size: 16px
+		line-height: 30px
+		color: #363636
+		margin-left: 0
+	.s3-merg
+		margin-top: 0px
+		margin-bottom: 20px 
+
+
+
+// section-4
+
+.section-4
+	background-image: url(../img/bg_s.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	min-height: 200px
+	width: 100%
+.s4-content-wrap
+	padding: 55px 0
+	text-align: center
+	.s4-wrap
+		display: inline-block
+		margin: 10px 10px
+		position: relative
+		a
+			border: 3px solid #fff
+			color: #fff
+			font: 24px "MarmeladRegular", Arial, sans-serif
+			height: 60px
+			width: 250px
+			display: block
+			padding-top: 10px
+		.s4-item-cont
+			transition: all .3s
+			position: absolute
+			background-color: $black-color 
+			width: 250px
+			height: 60px
+			padding-top: 10px
+			opacity: 0
+			&:hover
+				opacity: 1
+
+/* footer */
+footer
+	background-color: $black-color
+	padding: 40px 0 50px
+.footer-cont-wrap
+	padding: 0 20px
+.f-sec1
+	h3
+	 color: #fff
+	 margin-bottom: 30px
+	p
+		color: #656565
+		margin-left: 0
+		margin-bottom: 30px
+.f-sec2
+	ul 
+		display: inline-block
+		margin: 0
+		padding: 0
+		margin-right: 100px
+		li 
+			list-style: none
+			padding-bottom: 25px
+			a
+				color: $green-color
+.scrollup
+	width: 15px
+	height: 15px
+	border: 15px solid transparent
+	border-bottom: 15px solid #fff
+	margin: 30px auto
+	cursor: pointer
+	&:hover
+		opacity: .8
+
+
+
+//переписываем стили ползунков
+.jspTrack
+  background: #2a2a2a
+.jspDrag
+  background: $orange-color
+
+
+
+/* side navigation */
+
+.slide-nav
+	width: 475px
+	height: 100%
+	background-color: #171717
+	position: fixed
+	left: -475px
+	z-index: 1001
+	padding: 30px 50px 0 50px
+	ul
+		padding: 0
+		margin-top: 30px
+		li 
+			list-style: none
+			a
+				font: 22px "OpenSansBold", Arial, sans-serif
+				line-height: 60px
+				text-transform: uppercase
+				&:hover
+					color: #fff		
+
+.sn-toggle
+	display: inline-block	
+	width: 24px
+	height: 24px
+	float: right
+	margin-top: 15px 
+	background-image: url(../img/cl.png)	
+	background-repeat: no-repeat
+	&:hover
+		background-image: url(../img/cl_w.png)
+
+/* pop-up */
+.pop-up-form
+	background-color: #fff
+	padding: 60px 50px 50px
+	max-width: 500px
+	min-width: 300px
+	margin: auto
+	text-align: center
+	opacity: 1
+	position: relative
+	h4
+		margin-bottom: 60px
+	label
+		display: block
+	input
+		width: 100%
+		height: 50px
+		border: 1px solid #c5c5c5
+		margin-bottom: 10px
+		text-indent: 15px
+		color: #aaa
+		&:focus
+			outline: none
+			border: 1px solid $green-color
+	button
+		width: 100%
+		background-color: $green-color
+		border: none
+		color: #fff
+		font: 16px "OpenSansBold", Arial, sans-serif
+		padding: 13px 0 13px 
+		height: 50px
+		margin-top: 20px
+	.mfp-close
+		background-color: $orange-color
+		color: transparent
+		width: 50px
+		height: 50px
+		position: absolute
+		right: -50px
+		top: -20px
+		background-image: url(../img/cl_w.png)
+		background-repeat: no-repeat
+		background-position: center
+		opacity: 1
+		&:hover
+			background-color: #f55812
+
+*::-webkit-input-placeholder
+	color: #626262
+	opacity: 1
+
+*:-moz-placeholder
+	color: #626262
+	opacity: 1
+
+*::-moz-placeholder
+	color: #626262
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #626262
+	opacity: 1
+
+body input:focus
+	color: $black-color
+
+a.popup-with-form
+	outline: none
+
+
+
+/* down menu */
+
+.dropdown-mnu
+	width: auto
+	height: auto
+	background-color: $black-color
+	position: absolute
+	z-index: 101
+	right: 50px
+	top: 100px
+	padding: 35px 0 35px 35px
+	&:before
+		content: ""
+		position: absolute
+		top: -29px
+		left: 50%
+		margin-left: -7px
+		border: 15px solid transparent
+		border-bottom: 15px solid $black-color
+	ul
+		display: inline-block
+		margin: 0 60px 0 0
+		padding: 0
+		li 
+			list-style: none
+			color: $green-color
+			margin: 0
+			padding: 0
+			a
+				font-size: 14px
+				line-height: 30px
+				&:hover
+					color: #fff
+.dropdown-mnu.on				
+	display: none			
