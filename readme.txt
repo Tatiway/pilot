@@ -1,5 +1,5 @@
 
-To start select a folder ( cd  pilot ) and type gulp
+To start select a folder ( cd  pilot ), then npm instal, and then type gulp
 
 
 
